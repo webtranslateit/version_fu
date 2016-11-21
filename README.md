@@ -2,13 +2,13 @@
 
 = version_fu
 
-version_fu is a ActveRecord versioning plugin that that is based on the dirty attribute checking introduced in Rails 2.1. It has been updated for compatibility with Rails 3.
+[![Build Status](https://travis-ci.org/drakontia/version_fu.svg?branch=master)](https://travis-ci.org/drakontia/version_fu)
+
+version_fu is a ActveRecord versioning plugin that that is based on the dirty attribute checking introduced in Rails 4.1.
 
 == Installation
 
-  gem install version_fu
-
-If you're using Rails 3, add it to your Gemfile
+Add below to your Gemfile
 
   gem 'version_fu'
 
@@ -31,7 +31,7 @@ I want to track any changes made.  First step will be to make a new page_version
         t.timestamps
       end
     end
-  
+
     def self.down
       drop_table :page_versions
     end
@@ -58,7 +58,7 @@ Alright, so now that the database tables are in place, we can fire up version_fu
     version_fu
   end
 
-Thats it.
+That's it.
 
 
 == Configuration
