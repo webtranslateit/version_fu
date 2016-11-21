@@ -1,23 +1,23 @@
-= {State of the Project}[https://github.com/jmckible/version_fu/wiki/State-of-the-Project]
+# [State of the Project](https://github.com/jmckible/version_fu/wiki/State-of-the-Project)
 
-= version_fu
+# version_fu
 
 [![Build Status](https://travis-ci.org/drakontia/version_fu.svg?branch=master)](https://travis-ci.org/drakontia/version_fu)
 
 version_fu is a ActveRecord versioning plugin that that is based on the dirty attribute checking introduced in Rails 4.1.
 
-== Installation
+## Installation
 
 Add below to your Gemfile
 
   gem 'version_fu'
 
-== Usage
+## Usage
 
 Let's say I have a pages table:
 
   class Page < ActiveRecord::Base
-    # attributes: id, type, title, body, created_at, updated_at, creator_id, author_id
+    \# attributes: id, type, title, body, created_at, updated_at, creator_id, author_id
   end
 
 I want to track any changes made.  First step will be to make a new page_versions table:
@@ -61,7 +61,7 @@ Alright, so now that the database tables are in place, we can fire up version_fu
 That's it.
 
 
-== Configuration
+## Configuration
 
 You can pass a few configuration options if need be.  If you stick with the defaults above, you can skip all this.
 
@@ -78,7 +78,7 @@ You can pass a few configuration options if need be.  If you stick with the defa
 * :version_column - The name of the version column
 
 
-== Extensions
+## Extensions
 
 Now that you've got some versions, it would be nice to use ActiveRecord associations on it.  For example, Page.first.versions.latest.author wouldn't currently work because the Page::Version class doesn't know about the author method.  The version_fu call does all you to pass a block which is executed by the versioned class.  There is just one gotcha for associations:
 
@@ -90,7 +90,7 @@ Now that you've got some versions, it would be nice to use ActiveRecord associat
 
 Don't forget the class name, or you'll get a warning
 
-== When to Version
+## When to Version
 
 By default a new version will be saved whenever a versioned column is changed.  However, you can control this at a more fine grained level.  Just override the create_new_version? method.  For example, let's say you only want to save a new version if both the page title and body changed.  Taking advantage of the dirty attribute methods, you could do something like this:
 
@@ -104,7 +104,7 @@ By default a new version will be saved whenever a versioned column is changed.  
   end
 
 
-== Author
+## Author
 
 * version_fu was created by Jordan McKible http://jordan.mckible.com
 
