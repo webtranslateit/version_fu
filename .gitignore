@@ -1,4 +1,10 @@
+.bundle
+.rspec
+Gemfile.lock
 test/*.log
-*.db
-pkg/*
+bin/
+db/
+pkg
+spec/*.log
 version_fu-*.gem
+vendor/

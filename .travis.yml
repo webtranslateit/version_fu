@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 2.3.0
+  - 2.2
+  - 2.1
+  - 2.0
+sudo: false
+cache: bundler
+install: bundle install --jobs=1
+script: bundle exec rake spec
+after_script: cat ./spec/debug.log
