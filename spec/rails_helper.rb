@@ -6,10 +6,10 @@ require 'rspec/rails'
 require 'factory_girl_rails'
 require 'active_record'
 
-Dir[File.join(File.dirname(__FILE__), 'support/*.rb')].each { |f| require f }
+Dir[File.join(File.dirname(__FILE__), 'support/*.rb')].sort.each { |f| require f }
 ActiveRecord::Base.logger = Logger.new(File.dirname(__FILE__) + '/debug.log')
 VersionFuTables.up
-Dir[File.join(File.dirname(__FILE__), 'models/*.rb')].each { |f| require f }
+Dir[File.join(File.dirname(__FILE__), 'models/*.rb')].sort.each { |f| require f }
 
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
