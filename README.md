@@ -1,10 +1,8 @@
-# [State of the Project](https://github.com/jmckible/version_fu/wiki/State-of-the-Project)
-
 # version_fu
 
-[![Build Status](https://travis-ci.org/drakontia/version_fu.svg?branch=master)](https://travis-ci.org/drakontia/version_fu)
+[![Ruby](https://github.com/webtranslateit/version_fu/actions/workflows/ci.yml/badge.svg)](https://github.com/webtranslateit/version_fu/actions/workflows/ci.yml)
 
-version_fu is a ActveRecord versioning plugin that that is based on the dirty attribute checking introduced in Rails 4.1.
+version_fu is a ActiveRecord versioning plugin that that is based on the dirty attribute checking introduced in Rails 2.1.
 
 ## Installation
 
@@ -18,7 +16,7 @@ Let's say I have a pages table:
 
 ```ruby
   class Page < ActiveRecord::Base
-    \# attributes: id, type, title, body, created_at, updated_at, creator_id, author_id
+    # attributes: id, type, title, body, created_at, updated_at, creator_id, author_id
   end
 ```
 
