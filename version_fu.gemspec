@@ -5,7 +5,6 @@ require 'version_fu/version'
 Gem::Specification.new do |gem|
   gem.name = 'version_fu'
   gem.version = Version_fu::VERSION
-
   gem.required_rubygems_version = Gem::Requirement.new('>= 0') if gem.respond_to? :required_rubygems_version=
   gem.authors = ['Jordan McKible']
   gem.description = "version_fu helps version your ActiveRecord models. It is based on Rick Olson's acts_as_versioned and is compatible with Rails 3."

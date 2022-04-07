@@ -14,12 +14,6 @@ Gemspec/RequiredRubyVersion:
     - 'version_fu.gemspec'
 
 # Offense count: 2
-# This cop supports unsafe auto-correction (--auto-correct-all).
-Lint/NonDeterministicRequireOrder:
-  Exclude:
-    - 'spec/rails_helper.rb'
-
-# Offense count: 2
 # Configuration parameters: IgnoredMethods, CountRepeatedAttributes.
 Metrics/AbcSize:
   Max: 85
