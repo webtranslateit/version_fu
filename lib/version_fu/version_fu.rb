@@ -6,6 +6,7 @@ module VersionFu
   module ClassMethods
     def version_fu(options = {}, &block)
       return if included_modules.include? VersionFu::InstanceMethods
+
       __send__ :include, VersionFu::InstanceMethods
 
       cattr_accessor :versioned_class_name, :versioned_foreign_key, :versioned_table_name,
@@ -33,13 +34,15 @@ module VersionFu
       const_set(versioned_class_name, Class.new(ActiveRecord::Base)).class_eval do
         # find first version before the given version
         def self.before(version)
-          where("#{original_class.versioned_foreign_key} = ? and version < ?", version.send(original_class.versioned_foreign_key), version.version)
+          where("#{original_class.versioned_foreign_key} = ? and version < ?",
+                version.send(original_class.versioned_foreign_key), version.version)
             .order(version: :desc).first
         end
 
         # find first version after the given version.
         def self.after(version)
-          where("#{original_class.versioned_foreign_key} = ? and version > ?", version.send(original_class.versioned_foreign_key), version.version)
+          where("#{original_class.versioned_foreign_key} = ? and version > ?",
+                version.send(original_class.versioned_foreign_key), version.version)
             .order(version: :asc).first
         end
 
@@ -68,7 +71,8 @@ module VersionFu
       if versioned_class.table_exists?
         # Finally setup which columns to version
         self.versioned_columns = versioned_class.new.attributes.keys -
-                                 [versioned_class.primary_key, versioned_foreign_key, version_column, 'created_at', 'updated_at']
+                                 [versioned_class.primary_key, versioned_foreign_key, version_column, 'created_at',
+                                  'updated_at']
       else
         ActiveRecord::Base.logger.warn 'Version Table not found'
       end

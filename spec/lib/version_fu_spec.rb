@@ -25,7 +25,7 @@ describe Version_fu, type: :model do
     subject(:columns) { Page.new.versioned_columns }
 
     it 'has version proper columns' do
-      expect(columns).to match_array(%w(title body author_id))
+      expect(columns).to match_array(%w[title body author_id])
     end
 
     it 'do not have version non-existing columns' do
