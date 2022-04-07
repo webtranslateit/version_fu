@@ -34,3 +34,21 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
       run: bundle exec rake spec
+
+  linters:
+    name: Linters
+    runs-on: ubuntu-20.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.9
+          bundler-cache: true
+
+      - name: Run ruby linter
+        run: bundle exec rubocop --format github # Available from rubocop 1.2.0
