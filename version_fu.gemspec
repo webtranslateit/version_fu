@@ -3,22 +3,19 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'version_fu/version'
 
 Gem::Specification.new do |gem|
-  gem.name = 'version_fu'
+  gem.name = 'webtranslateit-version_fu'
   gem.version = Version_fu::VERSION
   gem.required_rubygems_version = Gem::Requirement.new('>= 0') if gem.respond_to? :required_rubygems_version=
   gem.authors = ['Jordan McKible']
   gem.description = "version_fu helps version your ActiveRecord models. It is based on Rick Olson's acts_as_versioned and is compatible with Rails 3."
   gem.email = ''
   gem.licenses = 'MIT'
-  gem.extra_rdoc_files = [
-    'README.rdoc'
-  ]
   gem.files = [
     'init.rb',
     'MIT-LICENSE',
     'Rakefile',
-    'README.rdoc',
-    'VERSION',
+    'README.md',
+    'lib/version_fu/version.rb',
     'lib/version_fu.rb',
     'lib/version_fu/version_fu.rb'
   ]
