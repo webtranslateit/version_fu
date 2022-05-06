@@ -36,7 +36,7 @@ Gem::Specification.new do |gem|
   gem.summary = 'Gemified version of the version_fu plugin.'
   gem.test_files = gem.files.grep(%r{^(test|spec|features)/})
 
-  gem.add_runtime_dependency 'activerecord', '>= 4.0', '<= 5.2'
+  gem.add_runtime_dependency 'activerecord', '>= 4.0', '< 6'
   gem.add_runtime_dependency 'rails-observers', '~> 0.1.2'
 
   # gem.add_development_dependency 'appraisal'
@@ -45,7 +45,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'guard-rspec'
   gem.add_development_dependency 'guard-rubocop'
   gem.add_development_dependency 'mocha'
-  gem.add_development_dependency 'rails', '>= 4.0', '<= 5.2'
+  gem.add_development_dependency 'rails', '>= 4.0', '< 6'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'rspec-rails', '~> 3.5'
   gem.add_development_dependency 'rubocop'
