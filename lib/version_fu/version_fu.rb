@@ -85,7 +85,7 @@ module VersionFu
 
   module InstanceMethods
     def find_version(number)
-      versions.find_by_version(number)
+      versions.find_by(version: number)
     end
 
     def check_for_new_version
