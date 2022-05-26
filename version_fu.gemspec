@@ -36,10 +36,8 @@ Gem::Specification.new do |gem|
   gem.summary = 'Gemified version of the version_fu plugin.'
   gem.test_files = gem.files.grep(%r{^(test|spec|features)/})
 
-  gem.add_runtime_dependency 'activerecord', '>= 4.0', '< 6'
-  gem.add_runtime_dependency 'rails-observers', '~> 0.1.2'
+  gem.add_runtime_dependency 'activerecord', '>= 5.2', '< 6'
 
-  # gem.add_development_dependency 'appraisal'
   gem.add_development_dependency 'factory_girl'
   gem.add_development_dependency 'factory_girl_rails'
   gem.add_development_dependency 'guard-rspec'
