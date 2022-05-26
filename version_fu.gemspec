@@ -33,12 +33,12 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'activerecord', '>= 5.2', '< 6'
 
-  gem.add_development_dependency 'factory_girl'
-  gem.add_development_dependency 'factory_girl_rails'
+  gem.add_development_dependency 'factory_bot'
+  gem.add_development_dependency 'factory_bot_rails'
   gem.add_development_dependency 'guard-rspec'
   gem.add_development_dependency 'guard-rubocop'
   gem.add_development_dependency 'mocha'
-  gem.add_development_dependency 'rails', '>= 4.0', '< 6'
+  gem.add_development_dependency 'rails', '>= 5.2', '< 6'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'rspec-rails', '~> 3.5'
   gem.add_development_dependency 'rubocop'
