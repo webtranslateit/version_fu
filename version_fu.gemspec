@@ -1,11 +1,7 @@
-lib = File.expand_path('lib', __dir__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'version_fu/version'
-
 Gem::Specification.new do |gem|
   gem.name = 'webtranslateit-version_fu'
-  gem.version = Version_fu::VERSION
-  gem.required_rubygems_version = Gem::Requirement.new('>= 0') if gem.respond_to? :required_rubygems_version=
+  gem.version = '1.2.1'
+  gem.required_rubygems_version = '>= 2.7'
   gem.authors = ['Jordan McKible']
   gem.description = "version_fu helps version your ActiveRecord models. It is based on Rick Olson's acts_as_versioned and is compatible with Rails 3."
   gem.email = ''
@@ -15,7 +11,6 @@ Gem::Specification.new do |gem|
     'MIT-LICENSE',
     'Rakefile',
     'README.md',
-    'lib/version_fu/version.rb',
     'lib/version_fu.rb',
     'lib/version_fu/version_fu.rb'
   ]
@@ -36,7 +31,7 @@ Gem::Specification.new do |gem|
   gem.summary = 'Gemified version of the version_fu plugin.'
   gem.test_files = gem.files.grep(%r{^(test|spec|features)/})
 
-  gem.add_runtime_dependency 'activerecord', '>= 5.2', '< 6'
+  gem.add_dependency 'activerecord', '>= 5.2', '< 6'
 
   gem.add_development_dependency 'factory_girl'
   gem.add_development_dependency 'factory_girl_rails'
