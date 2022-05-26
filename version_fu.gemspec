@@ -2,6 +2,7 @@ Gem::Specification.new do |gem|
   gem.name = 'webtranslateit-version_fu'
   gem.version = '1.2.1'
   gem.required_rubygems_version = '>= 2.7'
+  gem.required_ruby_version = '>= 2.7'
   gem.authors = ['Jordan McKible']
   gem.description = "version_fu helps version your ActiveRecord models. It is based on Rick Olson's acts_as_versioned and is compatible with Rails 3."
   gem.email = ''
