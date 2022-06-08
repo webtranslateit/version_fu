@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = 'webtranslateit-version_fu'
-  gem.version = '1.3.0'
+  gem.version = '1.4.0'
   gem.required_rubygems_version = '>= 2.7'
   gem.required_ruby_version = '>= 2.7'
   gem.authors = ['Jordan McKible']
