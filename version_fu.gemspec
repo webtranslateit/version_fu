@@ -30,7 +30,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.rubygems_version = '1.3.7'
   gem.summary = 'Gemified version of the version_fu plugin.'
-  gem.test_files = gem.files.grep(%r{^(test|spec|features)/})
 
   gem.add_dependency 'activerecord', '>= 5.2', '< 7'
 

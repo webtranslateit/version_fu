@@ -114,3 +114,9 @@ Style/ObjectThen: # new in 1.28
   Enabled: true
 Style/RedundantInitialize: # new in 1.27
   Enabled: true
+Gemspec/DeprecatedAttributeAssignment: # new in 1.30
+  Enabled: true
+Style/EnvHome: # new in 1.29
+  Enabled: true
+Style/MapCompactWithConditionalBlock: # new in 1.30
+  Enabled: true
