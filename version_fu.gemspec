@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = 'webtranslateit-version_fu'
-  gem.version = '1.4.0'
+  gem.version = '1.5.0'
   gem.required_rubygems_version = '>= 2.7'
   gem.required_ruby_version = '>= 2.7'
   gem.authors = ['Jordan McKible']
@@ -31,7 +31,7 @@ Gem::Specification.new do |gem|
   gem.rubygems_version = '1.3.7'
   gem.summary = 'Gemified version of the version_fu plugin.'
 
-  gem.add_dependency 'activerecord', '>= 5.2', '< 7'
+  gem.add_dependency 'activerecord', '>= 6.1', '< 8'
 
   gem.add_development_dependency 'factory_bot'
   gem.add_development_dependency 'factory_bot_rails'
