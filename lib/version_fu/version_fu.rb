@@ -4,7 +4,7 @@ module VersionFu
   end
 
   module ClassMethods
-    def version_fu(options = {}, &block)
+    def version_fu(options = {}, &)
       return if included_modules.include? VersionFu::InstanceMethods
 
       __send__ :include, VersionFu::InstanceMethods
@@ -66,7 +66,7 @@ module VersionFu
                                  foreign_key: versioned_foreign_key
 
       # Block extension
-      versioned_class.class_eval(&block) if block_given?
+      versioned_class.class_eval(&) if block_given?
 
       if versioned_class.table_exists?
         # Finally setup which columns to version

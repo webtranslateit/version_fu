@@ -1,7 +1,8 @@
 inherit_from: .rubocop_todo.yml
 
-Gemspec/DateAssignment: # new in 1.10
-  Enabled: true
+AllCops:
+  TargetRubyVersion: 3.1
+
 Gemspec/RequireMFA: # new in 1.23
   Enabled: true
 Layout/LineEndStringConcatenationIndentation: # new in 1.18
@@ -119,4 +120,12 @@ Gemspec/DeprecatedAttributeAssignment: # new in 1.30
 Style/EnvHome: # new in 1.29
   Enabled: true
 Style/MapCompactWithConditionalBlock: # new in 1.30
+  Enabled: true
+Layout/LineContinuationLeadingSpace: # new in 1.31
+  Enabled: true
+Layout/LineContinuationSpacing: # new in 1.31
+  Enabled: true
+Lint/ConstantOverwrittenInRescue: # new in 1.31
+  Enabled: true
+Lint/NonAtomicFileOperation: # new in 1.31
   Enabled: true
