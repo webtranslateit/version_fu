@@ -1,7 +1,7 @@
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 
 class VersionFuTables < ActiveRecord::Migration[4.2]
-  def self.up
+  def self.up # rubocop:todo Metrics/AbcSize, Metrics/MethodLength
     create_table :authors, force: true do |t|
       t.column :version, :integer
       t.column :first_name, :string, limit: 255
