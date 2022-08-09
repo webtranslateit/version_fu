@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |gem|
   gem.name = 'webtranslateit-version_fu'
   gem.version = '1.6.0'

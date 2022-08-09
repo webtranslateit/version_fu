@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module VersionFu
   def self.included(base)
     base.extend ClassMethods
