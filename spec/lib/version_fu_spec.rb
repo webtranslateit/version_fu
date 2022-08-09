@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Version_fu, type: :model do
+describe Version_fu, type: :model do # rubocop:todo Metrics/BlockLength
   after :all do
     VersionFuTables.down
   end
@@ -88,7 +88,7 @@ describe Version_fu, type: :model do
     end
   end
 
-  describe 'skip versioning' do
+  describe 'skip versioning' do # rubocop:todo Metrics/BlockLength
     let(:welcome) { create(:page) }
     let(:larry) { create(:larry) }
     let(:sara) { create(:sara) }

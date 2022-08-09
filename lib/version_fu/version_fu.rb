@@ -4,7 +4,10 @@ module VersionFu
   end
 
   module ClassMethods
-    def version_fu(options = {}, &)
+    # rubocop:todo Metrics/PerceivedComplexity
+    # rubocop:todo Metrics/MethodLength
+    # rubocop:todo Metrics/AbcSize
+    def version_fu(options = {}, &) # rubocop:todo Metrics/CyclomaticComplexity, Metrics/AbcSize, Metrics/MethodLength, Metrics/PerceivedComplexity
       return if included_modules.include? VersionFu::InstanceMethods
 
       __send__ :include, VersionFu::InstanceMethods
@@ -77,6 +80,9 @@ module VersionFu
         ActiveRecord::Base.logger.warn 'Version Table not found'
       end
     end
+    # rubocop:enable Metrics/AbcSize
+    # rubocop:enable Metrics/MethodLength
+    # rubocop:enable Metrics/PerceivedComplexity
 
     def versioned_class
       const_get versioned_class_name
