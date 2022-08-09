@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe Version_fu, type: :model do # rubocop:todo Metrics/BlockLength

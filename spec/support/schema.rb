@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 
 class VersionFuTables < ActiveRecord::Migration[4.2]
