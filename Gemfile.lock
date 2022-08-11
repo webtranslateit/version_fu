@@ -203,14 +203,14 @@ GEM
     rspec-mocks (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
-    rspec-rails (3.9.1)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-core (~> 3.9.0)
-      rspec-expectations (~> 3.9.0)
-      rspec-mocks (~> 3.9.0)
-      rspec-support (~> 3.9.0)
+    rspec-rails (4.0.1)
+      actionpack (>= 4.2)
+      activesupport (>= 4.2)
+      railties (>= 4.2)
+      rspec-core (~> 3.9)
+      rspec-expectations (~> 3.9)
+      rspec-mocks (~> 3.9)
+      rspec-support (~> 3.9)
     rspec-support (3.9.4)
     rubocop (1.34.1)
       json (~> 2.3)
@@ -251,7 +251,7 @@ DEPENDENCIES
   mocha
   rails (>= 5.2, < 8)
   rspec
-  rspec-rails (~> 3.5)
+  rspec-rails (~> 4.0)
   rubocop
   sqlite3
   webtranslateit-version_fu!
