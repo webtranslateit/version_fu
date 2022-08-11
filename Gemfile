@@ -2,5 +2,15 @@
 
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in version_fu.gemspec
 gemspec
+
+gem 'factory_bot'
+gem 'factory_bot_rails'
+gem 'guard-rspec'
+gem 'guard-rubocop'
+gem 'mocha'
+gem 'rails', '>= 5.2', '< 7'
+gem 'rspec'
+gem 'rspec-rails', '~> 3.5'
+gem 'rubocop'
+gem 'sqlite3'

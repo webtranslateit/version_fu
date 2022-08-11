@@ -32,15 +32,4 @@ Gem::Specification.new do |gem|
   gem.summary = 'Gemified version of the version_fu plugin.'
 
   gem.add_dependency 'activerecord', '>= 6.1', '< 8'
-
-  gem.add_development_dependency 'factory_bot'
-  gem.add_development_dependency 'factory_bot_rails'
-  gem.add_development_dependency 'guard-rspec'
-  gem.add_development_dependency 'guard-rubocop'
-  gem.add_development_dependency 'mocha'
-  gem.add_development_dependency 'rails', '>= 5.2', '< 7'
-  gem.add_development_dependency 'rspec'
-  gem.add_development_dependency 'rspec-rails', '~> 3.5'
-  gem.add_development_dependency 'rubocop'
-  gem.add_development_dependency 'sqlite3'
 end

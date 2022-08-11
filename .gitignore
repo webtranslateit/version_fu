@@ -1,6 +1,5 @@
 .bundle
 .rspec
-Gemfile.lock
 test/*.log
 bin/
 db/
