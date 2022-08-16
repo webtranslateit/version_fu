@@ -7,3 +7,4 @@ pkg
 spec/*.log
 version_fu-*.gem
 vendor/
+.rubocop-http*
