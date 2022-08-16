@@ -224,6 +224,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.21.0)
       parser (>= 3.1.1.0)
+    rubocop-performance (1.14.3)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
     rubocop-rspec (2.12.1)
       rubocop (~> 1.31)
     ruby-progressbar (1.11.0)
@@ -255,6 +258,7 @@ DEPENDENCIES
   rspec
   rspec-rails (~> 5.1)
   rubocop
+  rubocop-performance
   rubocop-rspec
   sqlite3
   webtranslateit-version_fu!

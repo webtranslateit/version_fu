@@ -1,5 +1,6 @@
 require:
   - rubocop-rspec
+  - rubocop-performance
 
 inherit_from:
   - https://raw.githubusercontent.com/webtranslateit/webtranslateit/main/.rubocop_common.yml
