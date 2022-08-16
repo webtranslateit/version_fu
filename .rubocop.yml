@@ -12,3 +12,7 @@ AllCops:
 
 RSpec/MultipleExpectations:
   Max: 3
+
+inherit_mode:
+   merge:
+     - Exclude
