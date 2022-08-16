@@ -14,7 +14,9 @@ if defined?(Bundler)
 end
 
 module Version_fu
+
   class Application < Rails::Application
+
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
 
@@ -52,5 +54,7 @@ module Version_fu
     # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
     # parameters by using an attr_accessible or attr_protected declaration.
     # config.active_record.whitelist_attributes = true
+
   end
+
 end

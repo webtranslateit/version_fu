@@ -2,13 +2,10 @@
 
 require 'rails_helper'
 
-describe Version_fu, type: :model do # rubocop:todo Metrics/BlockLength
-  after :all do
-    VersionFuTables.down
-  end
-
+describe Version_fu, type: :model do
   describe 'associations' do
     subject(:welcome) { create(:page) }
+
     before do
       welcome.update(title: 'Version 2', body: 'New Version')
       welcome.save
@@ -36,8 +33,10 @@ describe Version_fu, type: :model do # rubocop:todo Metrics/BlockLength
   end
 
   describe 'create' do
-    let(:larry) { create(:larry) }
     subject(:save_page) { create(:page, title: 'New', body: 'body', creator_id: larry.id, author_id: larry.id) }
+
+    let(:larry) { create(:larry) }
+
 
     it 'save new version' do
       old_count = Page.count
@@ -66,6 +65,7 @@ describe Version_fu, type: :model do # rubocop:todo Metrics/BlockLength
 
   describe 'update' do
     subject(:welcome) { create(:page) }
+
     let(:sara) { create(:sara) }
 
     it 'save new version' do
@@ -90,7 +90,7 @@ describe Version_fu, type: :model do # rubocop:todo Metrics/BlockLength
     end
   end
 
-  describe 'skip versioning' do # rubocop:todo Metrics/BlockLength
+  describe 'skip versioning' do
     let(:welcome) { create(:page) }
     let(:larry) { create(:larry) }
     let(:sara) { create(:sara) }
@@ -125,7 +125,9 @@ describe Version_fu, type: :model do # rubocop:todo Metrics/BlockLength
 
   describe 'finds' do
     subject(:welcome) { create(:page) }
+
     let(:welcome_1) { welcome.versions[0] }
+
     before do
       welcome.update title: 'Version 2', body: 'new version'
     end
@@ -154,9 +156,11 @@ describe Version_fu, type: :model do # rubocop:todo Metrics/BlockLength
   end
 
   describe 'block extension' do
+    subject(:welcome_1) { welcome.versions[0] }
+
     let(:larry) { create(:larry) }
     let(:welcome) { create(:page, author: larry) }
-    subject(:welcome_1) { welcome.versions[0] }
+
 
     it 'take a block containing ActiveRecord extension' do
       expect(welcome_1.author).to eq(larry)

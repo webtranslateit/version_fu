@@ -13,7 +13,7 @@ FactoryBot.define do
     author_id { 2 }
   end
 
-  factory :page_version, class: Page::Version do
+  factory :page_version, class: 'Page::Version' do
     page
     sequence(:version)
     title { 'Page::Version' }

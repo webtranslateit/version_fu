@@ -3,6 +3,7 @@
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 
 class VersionFuTables < ActiveRecord::Migration[4.2]
+
   def self.up # rubocop:todo Metrics/AbcSize, Metrics/MethodLength
     create_table :authors, force: true do |t|
       t.column :version, :integer
@@ -45,6 +46,7 @@ class VersionFuTables < ActiveRecord::Migration[4.2]
     drop_table :pages
     drop_table :page_versions
   end
+
 end
 
 ActiveRecord::Migration.verbose = false

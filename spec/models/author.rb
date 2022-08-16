@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Author < ActiveRecord::Base
+
   version_fu
 
   def create_new_version?
@@ -14,4 +15,5 @@ class Author < ActiveRecord::Base
   def hello_world(n = 1)
     "Hello World #{n}"
   end
+
 end
