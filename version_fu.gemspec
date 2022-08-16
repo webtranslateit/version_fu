@@ -23,11 +23,10 @@ Gem::Specification.new do |gem|
   gem.metadata = {
     'rubygems_mfa_required' => 'true',
     'homepage' => 'https://github.com/webtranslateit/version_fu',
-    'changelog_uri' => 'https://github.com/webtranslateit/webtranslateit/blob/master/history.md',
-    'documentation_uri' => 'https://github.com/webtranslateit/webtranslateit#readme',
-    'homepage_uri' => 'https://webtranslateit.com',
-    'source_code_uri' => 'https://github.com/webtranslateit/webtranslateit',
-    'wiki_uri' => 'https://github.com/webtranslateit/webtranslateit/wiki'
+    'changelog_uri' => 'https://github.com/webtranslateit/version_fu/blob/master/CHANGELOG.md',
+    'documentation_uri' => 'https://github.com/webtranslateit/version_fu#readme',
+    'homepage_uri' => 'https://github.com/webtranslateit/version_fu',
+    'source_code_uri' => 'https://github.com/webtranslateit/version_fu',
   }
 
   gem.rdoc_options = ['--charset=UTF-8']
