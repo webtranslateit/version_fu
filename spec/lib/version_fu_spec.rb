@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-describe Version_fu, type: :model do
+describe VersionFu, type: :model do
   describe 'associations' do
     subject(:welcome) { create(:page) }
 

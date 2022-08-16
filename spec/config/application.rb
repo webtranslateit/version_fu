@@ -13,7 +13,7 @@ if defined?(Bundler)
   Bundler.require(*Rails.groups)
 end
 
-module Version_fu
+module VersionFu
 
   class Application < Rails::Application
 
