@@ -26,7 +26,7 @@ Gem::Specification.new do |gem|
     'changelog_uri' => 'https://github.com/webtranslateit/version_fu/blob/master/CHANGELOG.md',
     'documentation_uri' => 'https://github.com/webtranslateit/version_fu#readme',
     'homepage_uri' => 'https://github.com/webtranslateit/version_fu',
-    'source_code_uri' => 'https://github.com/webtranslateit/version_fu',
+    'source_code_uri' => 'https://github.com/webtranslateit/version_fu'
   }
 
   gem.rdoc_options = ['--charset=UTF-8']
