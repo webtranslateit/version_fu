@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name = 'webtranslateit-version_fu'
-  gem.version = '1.6.2'
+  gem.version = '1.6.3'
   gem.required_ruby_version = '>= 3.1'
   gem.authors = ['Jordan McKible']
   # rubocop:todo Layout/LineLength
