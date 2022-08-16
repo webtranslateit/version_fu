@@ -8,6 +8,7 @@ Gem::Specification.new do |gem|
   gem.description = "version_fu helps version your ActiveRecord models. It is based on Rick Olson's acts_as_versioned and is compatible with Rails 3."
   gem.email = ''
   gem.licenses = 'MIT'
+  gem.homepage = 'https://github.com/webtranslateit/version_fu'
   gem.files = [
     'init.rb',
     'MIT-LICENSE',
