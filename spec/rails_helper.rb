@@ -9,7 +9,7 @@ require 'factory_bot_rails'
 require 'active_record'
 
 Dir[File.join(File.dirname(__FILE__), 'support/*.rb')].each { |f| require f }
-ActiveRecord::Base.logger = Logger.new(File.dirname(__FILE__) + '/debug.log')
+ActiveRecord::Base.logger = Logger.new("#{File.dirname(__FILE__)}/debug.log")
 VersionFuTables.up
 Dir[File.join(File.dirname(__FILE__), 'models/*.rb')].each { |f| require f }
 
