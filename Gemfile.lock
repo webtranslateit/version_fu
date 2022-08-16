@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    webtranslateit-version_fu (1.6.1)
+    webtranslateit-version_fu (1.6.2)
       activerecord (>= 6.1, < 8)
 
 GEM

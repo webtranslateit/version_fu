@@ -1,6 +1,6 @@
 # Changelog
 
-## Edge
+## 1.6.2 - 2022-08-16
 
 * Fix specs for Rails 7.
 * Move development dependencies to Gemfile and add Gemfile.lock to version control.
