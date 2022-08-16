@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 module VersionFu
+
   def self.included(base)
     base.extend ClassMethods
   end
 
   module ClassMethods
+
     # rubocop:todo Metrics/PerceivedComplexity
     # rubocop:todo Metrics/MethodLength
     # rubocop:todo Metrics/AbcSize
@@ -89,9 +91,11 @@ module VersionFu
     def versioned_class
       const_get versioned_class_name
     end
+
   end
 
   module InstanceMethods
+
     def find_version(number)
       versions.find_by(version: number)
     end
@@ -116,5 +120,7 @@ module VersionFu
       new_version.version = version_number
       self.version = version_number
     end
+
   end
+
 end

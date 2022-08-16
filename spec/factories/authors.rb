@@ -22,7 +22,7 @@ FactoryBot.define do
     end
   end
 
-  factory :author_version, class: Author::Version do
+  factory :author_version, class: 'Author::Version' do
     author
     sequence(:version)
     first_name { 'John' }
