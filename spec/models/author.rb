@@ -12,8 +12,8 @@ class Author < ActiveRecord::Base
     "#{first_name} #{last_name}"
   end
 
-  def hello_world(n = 1)
-    "Hello World #{n}"
+  def hello_world(num = 1)
+    "Hello World #{num}"
   end
 
 end

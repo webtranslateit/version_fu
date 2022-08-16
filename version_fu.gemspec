@@ -5,7 +5,9 @@ Gem::Specification.new do |gem|
   gem.version = '1.6.2'
   gem.required_ruby_version = '>= 3.1'
   gem.authors = ['Jordan McKible']
+  # rubocop:todo Layout/LineLength
   gem.description = "version_fu helps version your ActiveRecord models. It is based on Rick Olson's acts_as_versioned and is compatible with Rails 3."
+  # rubocop:enable Layout/LineLength
   gem.email = ''
   gem.licenses = 'MIT'
   gem.homepage = 'https://github.com/webtranslateit/version_fu'

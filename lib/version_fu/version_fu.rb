@@ -21,7 +21,9 @@ module VersionFu
 
       self.versioned_class_name         = options[:class_name]  || 'Version'
       self.versioned_foreign_key        = options[:foreign_key] || to_s.foreign_key
+      # rubocop:todo Layout/LineLength
       self.versioned_table_name         = options[:table_name]  || "#{table_name_prefix}#{base_class.name.demodulize.underscore}_versions#{table_name_suffix}"
+      # rubocop:enable Layout/LineLength
       self.version_column               = options[:version_column] || 'version'
 
       # Setup versions association

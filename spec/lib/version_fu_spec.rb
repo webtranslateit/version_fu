@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-describe Version_fu, type: :model do
+describe VersionFu, type: :model do
   describe 'associations' do
     subject(:welcome) { create(:page) }
 
@@ -126,44 +126,44 @@ describe Version_fu, type: :model do
   describe 'finds' do
     subject(:welcome) { create(:page) }
 
-    let(:welcome_1) { welcome.versions[0] }
+    let(:welcome1) { welcome.versions[0] }
 
     before do
       welcome.update title: 'Version 2', body: 'new version'
     end
 
     it 'version given number' do
-      welcome_2 = welcome.versions[1]
-      expect(welcome_1).not_to eq(welcome_2)
-      expect(welcome.find_version(1)).to eq(welcome_1)
-      expect(welcome.find_version(2)).to eq(welcome_2)
+      welcome2 = welcome.versions[1]
+      expect(welcome1).not_to eq(welcome2)
+      expect(welcome.find_version(1)).to eq(welcome1)
+      expect(welcome.find_version(2)).to eq(welcome2)
     end
 
     it 'latest version' do
-      welcome_2 = welcome.versions[1]
-      expect(welcome.versions.latest).to eq(welcome_2)
+      welcome2 = welcome.versions[1]
+      expect(welcome.versions.latest).to eq(welcome2)
     end
 
     it 'previous version' do
-      welcome_2 = welcome.versions[1]
-      expect(welcome_2.previous).to eq(welcome_1)
+      welcome2 = welcome.versions[1]
+      expect(welcome2.previous).to eq(welcome1)
     end
 
     it 'next version' do
-      welcome_2 = welcome.versions[1]
-      expect(welcome_1.next).to eq(welcome_2)
+      welcome2 = welcome.versions[1]
+      expect(welcome1.next).to eq(welcome2)
     end
   end
 
   describe 'block extension' do
-    subject(:welcome_1) { welcome.versions[0] }
+    subject(:welcome1) { welcome.versions[0] }
 
     let(:larry) { create(:larry) }
     let(:welcome) { create(:page, author: larry) }
 
 
     it 'take a block containing ActiveRecord extension' do
-      expect(welcome_1.author).to eq(larry)
+      expect(welcome1.author).to eq(larry)
     end
   end
 end
