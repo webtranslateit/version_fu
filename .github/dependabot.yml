@@ -16,17 +16,14 @@ updates:
     - edouard
     assignees:
     - edouard
-    allow:
-      - dependency-type: "all"
 
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: daily
+      interval: weekly
+      day: monday
       time: "04:00"
-
-  - package-ecosystem: npm
-    directory: "/"
-    schedule:
-      interval: daily
-      time: "04:00"
+    reviewers:
+    - edouard
+    assignees:
+    - edouard
