@@ -1,5 +1,9 @@
 # Changelog
 
+## Edge
+
+* Add ruby 3.2 to test matrix.
+
 ## 1.6.3 - 2022-08-16
 
 * Fix rubocop offences.
