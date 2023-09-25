@@ -2,7 +2,6 @@
 
 FactoryBot.define do
   factory :page do
-    sequence(:id)
     type { 'Page' }
     version { 2 }
     title { 'Version 2' }
