@@ -110,13 +110,13 @@ module VersionFu
     # This the method to override if you want to have more control over when to version
     def create_new_version?
       # Any versioned column changed?
-      self.class.versioned_columns.detect { |a| __send__ "#{a}_changed?" }
+      self.class.versioned_columns.detect { |a| __send__ :"#{a}_changed?" }
     end
 
     def instantiate_revision
       new_version = versions.build
       versioned_columns.each do |attribute|
-        new_version.__send__ "#{attribute}=", __send__(attribute)
+        new_version.__send__ :"#{attribute}=", __send__(attribute)
       end
       version_number = new_record? ? 1 : version + 1
       new_version.version = version_number
