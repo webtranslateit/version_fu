@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6.5 - 2023-12-28
+
+* Add ruby 3.3 to test matrix.
+* Dependencies update.
+
 ## 1.6.4 - 2023-06-26
 
 * Add ruby 3.2 to test matrix.
