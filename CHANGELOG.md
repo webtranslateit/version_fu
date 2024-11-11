@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.6 - 2024-11-11
+
+* Allow rails 8.
+
 ## 1.6.5 - 2023-12-28
 
 * Add ruby 3.3 to test matrix.
