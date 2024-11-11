@@ -33,5 +33,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.summary = 'Gemified version of the version_fu plugin.'
 
-  gem.add_dependency 'activerecord', '>= 6.1', '< 8'
+  gem.add_dependency 'activerecord', '>= 6.1', '< 9'
 end
