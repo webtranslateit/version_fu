@@ -12,7 +12,7 @@ module VersionFu
     # rubocop:todo Metrics/MethodLength
     # rubocop:todo Metrics/AbcSize
     def version_fu(options = {}, &) # rubocop:todo Metrics/CyclomaticComplexity, Metrics/AbcSize, Metrics/MethodLength, Metrics/PerceivedComplexity
-      return if included_modules.include? VersionFu::InstanceMethods
+      return if include?(VersionFu::InstanceMethods)
 
       __send__ :include, VersionFu::InstanceMethods
 
