@@ -14,7 +14,7 @@ module VersionFu
     def version_fu(options = {}, &) # rubocop:todo Metrics/CyclomaticComplexity, Metrics/AbcSize, Metrics/MethodLength, Metrics/PerceivedComplexity
       return if include?(VersionFu::InstanceMethods)
 
-      __send__ :include, VersionFu::InstanceMethods
+      include VersionFu::InstanceMethods
 
       cattr_accessor :versioned_class_name, :versioned_foreign_key, :versioned_table_name,
                      :version_column, :versioned_columns
