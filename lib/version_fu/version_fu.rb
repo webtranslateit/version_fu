@@ -10,7 +10,7 @@ module VersionFu
 
     # rubocop:todo Metrics/PerceivedComplexity
     # rubocop:todo Metrics/MethodLength
-    # rubocop:todo Metrics/AbcSize
+    # rubocop:todo-next Metrics/AbcSize
     def version_fu(options = {}, &) # rubocop:todo Metrics/CyclomaticComplexity, Metrics/AbcSize, Metrics/MethodLength, Metrics/PerceivedComplexity
       return if include?(VersionFu::InstanceMethods)
 
@@ -21,9 +21,8 @@ module VersionFu
 
       self.versioned_class_name         = options[:class_name]  || 'Version'
       self.versioned_foreign_key        = options[:foreign_key] || to_s.foreign_key
-      # rubocop:todo Layout/LineLength
+      # rubocop:todo-next Layout/LineLength
       self.versioned_table_name         = options[:table_name]  || "#{table_name_prefix}#{base_class.name.demodulize.underscore}_versions#{table_name_suffix}"
-      # rubocop:enable Layout/LineLength
       self.version_column               = options[:version_column] || 'version'
 
       # Setup versions association
@@ -86,7 +85,6 @@ module VersionFu
         ActiveRecord::Base.logger.warn 'Version Table not found'
       end
     end
-    # rubocop:enable Metrics/AbcSize
     # rubocop:enable Metrics/MethodLength
     # rubocop:enable Metrics/PerceivedComplexity
 
