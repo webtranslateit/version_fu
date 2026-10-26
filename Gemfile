@@ -6,8 +6,6 @@ gemspec
 
 gem 'factory_bot'
 gem 'factory_bot_rails'
-gem 'guard-rspec'
-gem 'guard-rubocop'
 gem 'mocha'
 gem 'rails', '>= 5.2', '< 9'
 gem 'rspec'
