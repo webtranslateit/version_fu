@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+* Require Ruby 3.3 or newer. Ruby 3.2 reached end of life on 2026-03-31.
+
 ## 1.6.6 - 2024-11-11
 
 * Allow rails 8.
