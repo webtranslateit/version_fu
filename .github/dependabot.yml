@@ -7,9 +7,12 @@ version: 2
 updates:
   - package-ecosystem: bundler
     directory: "/"
+    groups:
+      bundler:
+        patterns:
+          - "*"
     schedule:
-      interval: weekly
-      day: monday
+      interval: monthly
       time: "04:00"
     open-pull-requests-limit: 10
     reviewers:
@@ -19,9 +22,12 @@ updates:
 
   - package-ecosystem: github-actions
     directory: "/"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
     schedule:
-      interval: weekly
-      day: monday
+      interval: monthly
       time: "04:00"
     reviewers:
     - edouard
